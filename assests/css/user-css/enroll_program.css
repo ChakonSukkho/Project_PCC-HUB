@@ -1,0 +1,17 @@
+/* Basic styles — adapt to your dashboard theme */
+.main-content { padding: 20px; display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+.page-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.filters select, .filters input { padding:8px; margin-left:8px; }
+.programs-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:16px; }
+.program-card { background:var(--card-bg, #fff); border-radius:12px; padding:14px; box-shadow:0 4px 10px rgba(0,0,0,0.06); }
+.program-card h3 { margin:0 0 6px 0; font-size:1.05rem; }
+.program-meta { font-size:0.85rem; color:var(--muted); margin-bottom:10px; }
+.program-actions { display:flex; gap:8px; }
+.btn { padding:8px 12px; border-radius:8px; cursor:pointer; border:none; }
+.btn-primary { background:var(--brand, #1e88e5); color:white; }
+.btn-ghost { background:transparent; border:1px solid var(--muted); }
+.enrollments { background:var(--panel-bg, #f9f9f9); padding:12px; border-radius:10px; height:fit-content; }
+.enrollment-item { border-bottom:1px dashed #ddd; padding:8px 0; }
+.progress-bar { height:10px; background:#eee; border-radius:6px; overflow:hidden; }
+.progress-fill { height:100%; width:0%; background:linear-gradient(90deg,#4caf50,#8bc34a); }
+@media (max-width:900px) { .main-content { grid-template-columns: 1fr; } .enrollments { order: 2; } }
